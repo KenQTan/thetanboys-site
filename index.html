@@ -28,8 +28,10 @@
 
   /* Hero */
   .hero { position:relative; overflow:hidden; color:#fff; text-align:center;
-          background:linear-gradient(180deg, #2a7f8f 0%, #3c9aa6 55%, #f2c27b 100%);
-          padding:140px 0 150px; }
+          background:
+            linear-gradient(180deg, rgba(10,40,48,.55) 0%, rgba(10,40,48,.30) 45%, rgba(10,40,48,.45) 100%),
+            url("hero.jpg") center 40% / cover no-repeat, #2a7f8f;
+          padding:96px 0 360px; }
   .sun { position:absolute; width:220px; height:220px; border-radius:50%;
          background:radial-gradient(circle, #ffd27a 0%, #f2a541 70%); top:70px; right:9%; opacity:.85; }
   .hills { position:absolute; left:0; right:0; bottom:-1px; width:100%; height:120px; }
@@ -37,9 +39,9 @@
            padding:6px 16px; border-radius:999px; font-size:13px; font-weight:700;
            letter-spacing:.14em; text-transform:uppercase; margin-bottom:18px; }
   .hero h1 { font-size:clamp(44px, 8vw, 84px); line-height:1.02; margin:0 0 16px; letter-spacing:-.01em;
-             text-shadow:0 2px 18px rgba(0,0,0,.15); }
+             text-shadow:0 2px 24px rgba(0,0,0,.35); }
   .hero h1 .tan { color:var(--sun); }
-  .hero p { font-size:clamp(18px, 2.4vw, 22px); max-width:620px; margin:0 auto; opacity:.95; position:relative; }
+  .hero p { font-size:clamp(18px, 2.4vw, 22px); max-width:620px; margin:0 auto; position:relative; text-shadow:0 1px 12px rgba(0,0,0,.45); }
 
   /* Sections */
   section { padding:72px 0; }
@@ -100,7 +102,6 @@
 </nav>
 
 <header class="hero">
-  <div class="sun" aria-hidden="true"></div>
   <div class="wrap" style="position:relative">
     <div class="badge">Coming Soon</div>
     <h1>The <span class="tan">Tan</span> Boys</h1>
